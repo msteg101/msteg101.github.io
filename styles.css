@@ -119,7 +119,14 @@ p {
     text-align: center;
     font-size: 1.5rem;
 }
-
+/* Target the <img> element that has the class 'swirl' and make sizing fluid */
+img.swirl {
+    width: 92%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
 /* (media query removed per user request) */
 .sbhero img {
     width: 80%;
@@ -135,17 +142,33 @@ p {
     display: block;
     object-fit: cover;
 }
+hr#linebreak {
+    border: 0;
+    border-top: 2px solid var(--accent);
+    width: 80%;
+    margin: 32px auto;
+    padding-bottom: 20px;
+}
 .tag {
     text-align: center;
     font-size: 1.2rem;
     margin-top: 10px;
+}
+.mission {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
 }
 table {
     width: 80%;
     margin: 0 auto;
     font-size: 1.3rem;
     line-height: 1.5rem;
-    cell-padding: 10px;
+    padding: 20px;
+    border-spacing: 20px;
+    text-align: center;
 }
 .page-previews {
     display: flex;
@@ -185,4 +208,39 @@ footer {
     background: var(--primary);
     color: var(--accent);
     margin-top: 40px;
+}
+details {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the clickable heading */
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Remove default arrow */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add custom arrow */
+summary::after {
+  content: "▶";
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when open */
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+details {
+    max-width: 800px;
+    margin: 20px auto;
 }
