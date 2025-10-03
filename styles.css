@@ -397,10 +397,13 @@ details {
 .career-hero {
     margin: 0;
     padding: 0;
+    justify-content: center;
+    text-align: center;
 }
 .career-hero img {
     width: 100%;
     display: block;
+    height: auto;
 }
 
 summary {
