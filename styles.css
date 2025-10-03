@@ -5,30 +5,25 @@
     --secondary: #aed397;
     --accent: #778797;
 }
-
 body {
   font-family: 'Josefin Sans', sans-serif;
   color: var(--text);
   background: var(--background);
 }
-
 .josefin-sans-extralight { font-weight: 200; }
 .josefin-sans-regular { font-weight: 400; }
 .josefin-sans-bold { font-weight: 700; }
-
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
-
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-
 .logo h1 {
     margin: 0;
     font-size: 2rem;
@@ -37,7 +32,6 @@ header {
     display: flex;
     align-items: center;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -47,48 +41,40 @@ nav ul {
     justify-content: center;
     font-size: 1.2rem;
 }
-
 .logo-link {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: inherit;
 }
-
 .logo-img {
     width: 140px;
     height: auto;
     display: block;
 }
-
 .site-title {
     margin: 0;
     font-size: 1.4rem;
     padding-left: 8px;
 }
-
 nav a {
     text-decoration: none;
     color: var(--text);
     font-weight: 700;
 }
-
 nav a:hover {
     color: var(--primary);
 }
-
 h2, h3 {
     font-size: 1.8rem;
     text-align: center;
 }
-
 h1 {
     color: var(--primary);
     font-size: 2.5rem;
     margin-top: 20px;
     text-align: center;
 }
-
 .hero {
     width: 100%;
     max-width: 1280px;
@@ -146,14 +132,12 @@ img.swirl {
     justify-content: center;
     padding-left: 50px;
 }
-
 .hero img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
-
 hr#linebreak {
     border: 0;
     border-top: 2px solid var(--accent);
@@ -161,13 +145,11 @@ hr#linebreak {
     margin: 32px auto;
     padding-bottom: 20px;
 }
-
 .tag {
     text-align: center;
     font-size: 1.2rem;
     margin-top: 10px;
 }
-
 .mission {
     text-align: center;
     font-size: 1.5rem;
