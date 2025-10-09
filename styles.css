@@ -298,8 +298,9 @@ footer {
     text-align: center;
     padding: 10px;
     background: var(--primary);
-    color: var(--accent);
+    color: var(--secondary);
     margin-top: 40px;
+    padding-top: 40px;
 }
 details {
   border: 1px solid #ccc;
@@ -339,16 +340,31 @@ details {
     text-align: center;
     color: var(--accent);
 }
-.career-hero {
-    margin: 0;
+.career-hero p {
+    margin: 0 50px;
     padding: 0;
     justify-content: center;
     text-align: center;
+    line-height: 1.5rem;
 }
+/* images nested inside a career-hero container */
 .career-hero img {
-    width: 100%;
     display: block;
     height: auto;
+    justify-content: center;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* images that themselves have the career-hero class (e.g. <img class="career-hero">) */
+img.career-hero {
+    display: block;
+    margin: 0 auto;       /* centers the block-level image */
+    max-width: 80%;       /* prevents it from stretching full width */
+    height: auto;
+    object-fit: cover;
+    padding: 20px 0;
 }
 summary {
   font-weight: bold;
@@ -386,9 +402,20 @@ details[open] summary::after {
     font-size: 1rem;
     font-weight: lighter;
 }
+#more-info {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    text-align: center;
+}
+#more-info h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
 footer a {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--secondary);
     margin: 0 10px;
     font-size: 1.1rem;
     background-color: #006137;
