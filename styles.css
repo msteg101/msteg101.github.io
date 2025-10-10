@@ -131,7 +131,7 @@ img.swirl {
     display: block;
     object-fit: cover;
 }
-hr#linebreak {
+hr.linebreak {
     border: 0;
     border-top: 2px solid var(--accent);
     width: 80%;
@@ -389,12 +389,13 @@ details[open] summary::after {
     padding: 0 20px;
     font-weight: lighter;
     text-align: center;
-    color: var(--accent);
+    color: var(--primary);
 
 }
 .references a {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--primary);
+    font-size: 1.2rem;
 }
 .references ul {
     list-style: none;
