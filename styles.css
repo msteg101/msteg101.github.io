@@ -374,7 +374,7 @@ details {
     color: var(--accent);
 }
 .career-hero p {
-  max-width: 70%;
+  max-width: 900px;
   margin: 0 auto;        /* centers the paragraph block */
   text-align: center;    /* centers the text inside */
   line-height: 2rem;
