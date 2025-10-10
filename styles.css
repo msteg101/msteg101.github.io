@@ -1,3 +1,33 @@
+/* ======= GLOBAL RESET / NORMALIZER ======= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--text);
+  background: var(--background);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make all images behave the same across browsers */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 :root {
     --text: #161109;
